@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Store</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
+    <link rel="stylesheet" href="src/assets/css/app.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.9/toaster.min.css" rel="stylesheet" />
+  </head>
+  <body class="grey lighten-5">
+
+
+  <div  ng-include="'src/modules/common/nav/nav.html'"></div>
+    <div ng-view></div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/0.4.9/toaster.min.js"></script>
+    <script src="src/modules/common/index.js"></script>
+    <script src="src/modules/book/index.js"></script>
+
+    <script src="src/index.js"></script>
+    <script src="src/routes.js"></script>
+
+    <script src="src/modules/common/nav/navcontroller.js"></script>
+    <script src="src/modules/book/services/bookservice.js"></script>
+    <script src="src/modules/book/detail/bookdetailscontroller.js"></script>
+    <script src="src/modules/book/add/bookaddcontroller.js"></script>
+    <script src="src/modules/book/list/booklistcontroller.js"></script>
+
+  </body>
+</html>
