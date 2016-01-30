@@ -4,7 +4,8 @@
   "description": "JS & Angular bootcamp by Philos Lab",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
+    "front": "live-server",
+    "start": "npm run front & npm run es6 & npm run server",
     "server": "nodemon server/",
     "deploy": "surge -p workshops/04_directives_forms_components/",
     "es6": "webpack -w"
