@@ -1,0 +1,49 @@
+<div id="bookDetails" class="container row animated fadeInUpSmall">
+  <div class="col s5 m5">
+    <div class="card-image waves-effect waves-block waves-light">
+      <label>Select Cover</label>
+
+
+      <!--TODO: Display list of covers in the select list -->
+      <select class="browser-default" ng-model="book.cover">
+        <option ng-repeat="cover in book.covers" value="{{cover}}">{{cover}}</option>
+      </select>
+
+
+      <!-- TODO: Display the selected book's cover below here -->
+      <img ng-src="{{book.cover}}"/>
+    </div>
+  </div>
+  <div class="col s7 m7">
+
+    <!-- TODO: add a name property to your form (addBookForm)-->
+    <form class="row" ng-submit="book.add()">
+      <div>
+        <div class="input-field col s12">
+          <input type="text" ng-model="book.title">
+          <label for="first_name">Title</label>
+        </div>
+        <div class="input-field col s12">
+          <input  type="text" ng-model="book.author">
+          <label for="last_name">Author</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="number" ng-model="book.price">
+          <label for="first_name">Price</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea  class="materialize-textarea" ng-model="book.description"></textarea>
+          <label for="textarea1">Description</label>
+        </div>
+      </div>
+      <!-- TODO: This buttong should only be enable if the form is valid -->
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="mdi-content-send right"></i>
+      </button>
+    </div>
+  </form>
+</div>
