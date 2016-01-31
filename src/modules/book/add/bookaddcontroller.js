@@ -1,16 +1,15 @@
 (function() {
+  'use strict';
 
-    BookAddController.$inject=['$scope','$routeParams','BookFactory'];
+  BookAddController.$inject=['$scope','$routeParams','BookFactory'];
+  function BookAddController($routeParams, BookFactory) {
 
-    function BookAddController($scope, $routeParams, BookFactory) {
-
-
-        function addBook() {
-
-            BookFactory.addBook($scope.book);
-        }
-
-
+    function addBook() {
+      BookFactory.addBook(this.book);
     }
-    angular.module('book').controller('BookAddController',BookAddController);
+
+    this.addBook = addBook;
+  }
+  angular.module('book').controller('BookAddController',BookAddController);
+
 })();
