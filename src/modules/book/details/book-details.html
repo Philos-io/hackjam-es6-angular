@@ -1,0 +1,32 @@
+<div id="bookDetails" class="container row">
+  <div class="col s5 m5">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img ng-src="{{book.cover}}" alt="{{book.title}}">
+    </div>
+  </div>
+  <div class="col s7 m7">
+    <form class="row">
+      <div >
+        <div class="input-field col s12">
+          <input disabled type="text" ng-model="book.title">
+        </div>
+        <div class="input-field col s12">
+          <input disabled type="text" ng-model="book.author">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled  type="number" ng-model="book.price">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea disabled  class="materialize-textarea" ng-model="book.description"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <a class="waves-effect waves-light btn-large">Edit</a>
+    </div>
+    </div>
+  </form>
+</div>
