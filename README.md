@@ -16,7 +16,7 @@ The goal is to migrate this application to ES6.
 
 ### How to use the repository
 
-Git clone this repo and run `npm install`
+`git clone https://github.com/Philos-io/hacm-es6-angular.git` && `npm install`
 
 Now you can run your application by running: `npm start`
 
