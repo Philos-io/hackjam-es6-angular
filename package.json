@@ -1,11 +1,10 @@
 {
   "name": "angular.koans",
   "version": "1.0.0",
-  "description": "JS & Angular bootcamp by Philos Lab",
+  "description": "Migrating an es5 angular apps to es6",
   "main": "index.js",
   "scripts": {
-    "front": "live-server",
-    "start": "npm run front & npm run es6 & npm run server",
+    "start": "live-server",
     "server": "nodemon server/",
     "deploy": "surge -p workshops/04_directives_forms_components/",
     "es6": "webpack -w"
@@ -14,15 +13,14 @@
     "angular",
     "bootcamp",
     "philos.io",
-    "javascript"
+    "javascript",
+    "hack jam",
+    "es6 or es2015"
   ],
   "author": "davy@philos.io",
   "license": "MIT",
   "dependencies": {
-    "angular-route": "^1.4.9",
-    "body-parser": "^1.14.2",
-    "cors": "^2.7.1",
-    "express": "^4.13.4"
+    "angular-route": "^1.4.9"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
