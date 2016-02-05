@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  BookDetailsController.$inject =['$routeParams','BookFactory'];
+  BookDetailsController.$inject = ['$routeParams','BookFactory'];
 
   function BookDetailsController($routeParams, BookFactory) {
 

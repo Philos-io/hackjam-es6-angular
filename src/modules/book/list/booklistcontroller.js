@@ -12,5 +12,5 @@
 
     }
 
-    angular.module('book').controller('BookListController',BookListController);
+    angular.module('book').controller('BookListController', BookListController);
 })();

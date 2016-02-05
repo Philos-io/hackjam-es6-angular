@@ -1,9 +1,5 @@
-
 (function() {
+  'use strict';
 
-    'use strict';
-
-    angular.module('book', []);
-
-
+  angular.module('book', []);
 })();
