@@ -6,7 +6,7 @@
   "scripts": {
     "start": "live-server",
     "server": "nodemon server/",
-    "deploy": "surge -p workshops/04_directives_forms_components/",
+    "deploy": "surge",
     "es6": "webpack -w"
   },
   "keywords": [

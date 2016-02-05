@@ -3,6 +3,10 @@ built with Angular in ES5.
 
 The goal is to migrate this application to ES6.
 
+The first person to have it live and running wins!!
+
+To deploy it, you can use surge.sh (`npm run deploy`)
+
 ### Tools:
 
 [![Join the chat at https://gitter.im/Philos-io/hackjam-es6-angular](https://badges.gitter.im/Philos-io/hackjam-es6-angular.svg)](https://gitter.im/Philos-io/hackjam-es6-angular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
