@@ -28,7 +28,7 @@
         description: 'Functional programming in JavaScript',
         price: 29.99,
         category: 'Programming language',
-        cover: 'assets/img/javascript.jpg'
+        cover: 'src/assets/img/javascript.jpg'
       },
       {
         bookID: 9100,
@@ -37,7 +37,7 @@
         description: 'Enhanced Productivity with Structured Web Apps',
         price: 19.99,
         category: 'Web Frameworks',
-        cover: 'assets/img/angularjs.jpg'
+        cover: 'src/assets/img/angularjs.jpg'
       },
       {
         bookID: 9353,
@@ -46,7 +46,7 @@
         description: "In this book you will build robot, connected apps and devices applications.",
         price: 18.99,
         category: 'Web Frameworks',
-        cover: 'assets/img/iot.jpg'
+        cover: 'src/assets/img/iot.jpg'
       },
       {
         bookID: 9300,
@@ -55,7 +55,7 @@
         description:'Building data visualisation apps using JavaScript',
         price: 20.99,
         category: 'Web Frameworks',
-        cover: 'assets/img/datavis.jpg'
+        cover: 'src/assets/img/datavis.jpg'
       },
       {
         bookID: 9657,
@@ -64,7 +64,7 @@
         description: "This book will cover ES6 entirely and will show you how to use ES6 today.",
         price: 9.99,
         category: 'Web Frameworks',
-        cover: 'assets/img/es6.jpg'
+        cover: 'src/assets/img/es6.jpg'
       },
       {
         bookID: 9887,
@@ -73,7 +73,7 @@
         description: "Build Hybrid apps using Angular, Ionic and deliver fast.",
         price: 9.99,
         category: 'Web Frameworks',
-        cover: 'assets/img/ionic.jpg'
+        cover: 'src/assets/img/ionic.jpg'
       },
       {
         bookID: 9546,
@@ -82,7 +82,7 @@
         description: 'Building NodeBots with Raspberry Pi, Arduino, and BeagleBone',
         price: 10.99,
         category: 'Robotic & Programming',
-        cover: 'assets/img/robot.jpg'
+        cover: 'src/assets/img/robot.jpg'
       }
     ];
   }
