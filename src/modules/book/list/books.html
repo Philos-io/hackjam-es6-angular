@@ -1,0 +1,20 @@
+<div class="row container">
+  <input type="search" placeholder="search books" class="validate" ng-model="model.title"/>
+  <div class="col s12 m3 animated fadeInUpSmall" ng-repeat="book in bookList.books | filter:model.title">
+    <div class="card small">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" ng-src="{{book.cover}}" alt="{{book.title}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{book.title}}<i class="mdi-navigation-more-vert right"></i></span>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{book.title}}<i class="mdi-navigation-close right"></i></span>
+        <p>{{book.description}}</p>
+        <p>
+        <a ng-href="#/books/{{book.bookID}}">See more details</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
