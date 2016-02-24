@@ -1,7 +1,7 @@
-import angular from 'angular';
+import angular, {module}   from 'angular';
+import 'angular-mocks';
 
 export function mocks($httpBackend){
-
   $httpBackend.whenGET('/api/books').respond(getBooks());
 
   $httpBackend.whenGET(new RegExp('\\/books\\/[0-9]+'))
@@ -16,14 +16,13 @@ export function mocks($httpBackend){
   });
 
   $httpBackend.whenGET().passThrough();
-
 }
 
 mocks.$inject = ['$httpBackend'];
 
-export default angular.module('bookstore.mocks', []).run(mocks).name;
+export default module('bookstore.mocks', ['ngMockE2E']).run(mocks).name;
 
-function getBooks(){
+export function getBooks(){
   return [
     {
       bookID: 9809,

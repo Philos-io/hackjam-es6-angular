@@ -4,7 +4,7 @@ import common                       from './modules/common/';
 import book                         from './modules/book/';
 import routes                       from './routes';
 
-module('bookstore', [mocks, routes, common, book, 'ngMockE2E'])
+module('bookstore', [mocks, routes, common, book])
 
 document.addEventListener('DOMContentLoaded', () => {
   bootstrap(document.body, ['bookstore']);
