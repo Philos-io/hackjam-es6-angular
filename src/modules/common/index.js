@@ -1,6 +1,6 @@
-(function() {
-    'use strict';
+import angular, {module} from 'angular';
+import bookstore         from './bookstore/bookstoreComponent';
+import navbar            from './nav/navbarComponent'
 
-    angular.module('common', []);
-})();
+export default angular.module('common', [bookstore, navbar]).name;
 
