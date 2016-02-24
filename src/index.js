@@ -1,11 +1,12 @@
-(function() {
-  'use strict';
+import angular, {module, bootstrap} from 'angular';
+import mocks                        from './mocks';
+import common                       from './modules/common/';
+import book                         from './modules/book/';
+import routes                       from './routes';
 
-  angular.module('bookstore', ['common','ngRoute','book', 'ngMockE2E']);
+module('bookstore', [mocks, routes, common, book, 'ngMockE2E'])
 
-  document.addEventListener('DOMContentLoaded',function(){
-    angular.bootstrap(document.body, ['bookstore']);
-  });
-
-})();
+document.addEventListener('DOMContentLoaded', () => {
+  bootstrap(document.body, ['bookstore']);
+});
 

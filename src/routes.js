@@ -1,27 +1,20 @@
-(function(){
-  'use strict';
+import angular from 'angular';
+import ngRoute from 'angular-route';
 
-    RouteConfig.$inject = ['$routeProvider'];
 
-    function RouteConfig($routeProvider) {
-      $routeProvider
-        .when('/', {
-          templateUrl: './src/modules/book/list/book.html',
-          controller: 'BookListController',
-          controllerAs :'bookList'
-        })
-        .when('/books/add', {
-          templateUrl: './src/modules/book/add/add-book.html',
-          controller: 'BookAddController',
-          controllerAs: 'book'
-        })
-        .when('/books/:id', {
-          templateUrl: './src/modules/book/details/book-details.html',
-          controller: 'BookDetailsController',
-          controllerAs: 'book'
-        });
-    }
+export function RouteConfig($routeProvider) {
+  $routeProvider
+    .when('/', {
+      template: '<books></books>'
+    })
+    .when('/books/add', {
+      template: '<add-book></add-book>'
+    })
+    .when('/books/:id', {
+      template: '<details-book></details-book>'
+    });
+}
 
-    angular.module('book').config(RouteConfig);
-})();
+RouteConfig.$inject = ['$routeProvider'];
 
+export default angular.module('bookstore.routes', [ngRoute]).config(RouteConfig).name;
